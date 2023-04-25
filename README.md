@@ -4,6 +4,12 @@
 ## CEL PROJEKTU
   * 
 
+## CO ZAWIERA NASZ PROGRAM
+  * 
+
+## 
+
+
 ## SPIS TREŚCI 
  * do czego służy program i jaką funkcjonalność oferuje (transformacja XYZ -> BLH, transformacja BLH -> XYZ, jakie elipsidy są obsługiwane, ...)
  * jakie wymagania trzeba spełnić, by program działał na danym komputerze (np. trzeba mieć pythona w wesji takiej-a-takiej, 
