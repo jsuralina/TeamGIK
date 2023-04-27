@@ -24,7 +24,8 @@
   * 
   
 ## WYMAGANIA, KTÓRE TRZEBA SPEŁNIAĆ, ŻEBY PROGRAM DZIAŁAŁ NA DANYM KOMPUTERZE
-  * 
+  * Program Python w wersji...
+  * Zainstalowane biblioteki: numpy, math, argparse
  
 ## SYSTEM OPERACYJNY 
   * 
@@ -38,9 +39,28 @@
 ## ZNANE BŁĘDY I NIETYPOWE ZACHOWANIA, KTÓRE NIE ZOSTAŁY JESZCZE NAPRAWIONE
   * 
 
+## UKŁADY WSPÓŁRZĘDNYCH WYKORZYSTANE W ZADANIU
+  * BLH to układ współrzędnych geodezyjnych, w którym:
+     * długość geograficzna (B) to kąt między płaszczyzną południka zielonego (czyli płaszczyzną zawierającą oś obrotu Ziemi) a płaszczyzną, która przechodzi przez dany punkt oraz przez południk zerowy;
+     * szerokość geograficzna (L) to kąt między płaszczyzną równika a płaszczyzną zawierającą dany punkt;
+     * wysokość geoidy (H) to odległość punktu od geoidy (powierzchni odniesienia).
+
+
+
 ## TRANSFORMACJE
  ### Transformacja XYZ -> BLH
- - Przeliczanie współrzędnych kartezjańskich X, Y, Z na współrzędne geodezyjne B, L, H
+ - Przeliczanie współrzędnych kartezjańskich X, Y, Z na współrzędne geodezyjne B, L, H. Jest to  sposób opisu położenia geodezyjnego punktu na Ziemi. 
+ - Aby dokonać przekształcenia XYZ na BLH, należy zastosować poniższe etapy:
+    1. Obliczenie długości i szerokości geogaficznej: 
+   '''
+    $ B=atan(Y/X)
+    $ L=atan(Z/sqrt(X^2 +Y^2))
+   ''' 
+    2. Wyznaczenie punktu do punktu osi obrotu Ziemi:
+    '''
+    $ R=sqrt(X^2 + Y^2 + Z^2)
+    '''
+    3. 
  
  ### Transformacja BLH -> XYZ
  
