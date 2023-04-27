@@ -2,10 +2,10 @@
  Wykonali: Piotr Zawistowski, Julia Surała, Maja Wiśniewska
 
 ## CEL PROJEKTU
-  * 
+  * Utworzenie programu do transformacji współrzędnych między układami.
 
 ## CO ZAWIERA NASZ PROGRAM
-  * 
+  * ?????
 
 ## 
 
@@ -21,11 +21,12 @@
 
 
 ## DO CZEGO SŁUŻY PROGRAM?
-  * 
+  * Program do transformacji współrzędnych między układami służy do konwertowania punktów opisanych w jednym układzie odniesienia na punkty opisane w innym układzie odniesienia.
+  * Program ten pozwala przeliczać współrzędne geodezyjne, takie jak szerokość, długość geograficzna wraz z wysokością pomiędzy różnymi układami odniesienia geodezyjnego, np WGS84, GRS80, czy lokalne układy odniesienia. Może także konwertować współrzędne kartezjańskie XYZ pomiędzy różnymi układami odniesienia kartezjańskiego. 
   
 ## WYMAGANIA, KTÓRE TRZEBA SPEŁNIAĆ, ŻEBY PROGRAM DZIAŁAŁ NA DANYM KOMPUTERZE
-  * Program Python w wersji...
-  * Zainstalowane biblioteki: numpy, math, argparse
+  * Program Python w wersji odpowiedniej dla danego systemu operacyjnego.
+  * Zainstalowane biblioteki:  math, argparse np. przy pomocy menadżera pakietów pip.
  
 ## SYSTEM OPERACYJNY 
   * 
