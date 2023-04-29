@@ -36,7 +36,7 @@ Posługując się git bash należy otorzyć nasz folder (w którym zrobiliśmy s
 Dane w pliku do wczytania odzielamy przecinkami, odpowiedni w kolejności: dla hirvonena: x,y,z; flh2XYZ: f,l,h; xyz2neu: x,y,z,x0,y0,z0,f,l; h u2000: f,l; u1992: f,l.
 Aby skorzystać z wybranej przez nas transformacji należy wpisać: python nazwaskryptu.py 'wybrana transformacja' 'plik z danymi txt' 'plik wyjściowy (np. txt)'. 
   
-## KORZYSTANIE Z PROGRAMU 
+## KORZYSTANIE Z PROGRAMU - PRZYKŁADY
   * 
 
 ## ZNANE BŁĘDY I NIETYPOWE ZACHOWANIA, KTÓRE NIE ZOSTAŁY JESZCZE NAPRAWIONE
