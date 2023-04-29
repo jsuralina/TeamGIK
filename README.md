@@ -5,7 +5,7 @@
   * Utworzenie programu do transformacji współrzędnych między układami.
 
 ## CO ZAWIERA NASZ PROGRAM
-  * ?????
+  * Program zawiera następujące funkcje na zamiany współrzędnych między układami oraz transformacje: z układu geocentrycznego do geodezyjnego (hirvonen), z układu geodezyjnego do geocentrycznego (flh2XYZ), z układu geocentrycznego do topocentrycznego (xyz2neu), oraz transformacje fi i lam do układów 2000 i 1992. Transformacji można dokonać wykorzystując elipsoidy: GRS80, WGS84, Krasowski. Aby dokonać transformacji na odpowidniej elipsoidze należy wpisać jej nazwę w odpowiednim miejscu w skrypcie. 
 
 ## 
 
@@ -21,18 +21,20 @@
 
 
 ## DO CZEGO SŁUŻY PROGRAM?
-  * Program do transformacji współrzędnych między układami służy do konwertowania punktów opisanych w jednym układzie odniesienia na punkty opisane w innym układzie odniesienia.
-  * Program ten pozwala przeliczać współrzędne geodezyjne, takie jak szerokość, długość geograficzna wraz z wysokością pomiędzy różnymi układami odniesienia geodezyjnego, np WGS84, GRS80, czy lokalne układy odniesienia. Może także konwertować współrzędne kartezjańskie XYZ pomiędzy różnymi układami odniesienia kartezjańskiego. 
+  * Program do zamiany współrzędnych między układami oraz transformacji służy do konwertowania punktów opisanych w jednym układzie odniesienia na punkty opisane w innym układzie odniesienia.
+  * Program ten pozwala przeliczać współrzędne geodezyjne, takie jak szerokość, długość geograficzna wraz z wysokością pomiędzy różnymi układami odniesienia geodezyjnego: WGS84, GRS80, Krasowski.
   
 ## WYMAGANIA, KTÓRE TRZEBA SPEŁNIAĆ, ŻEBY PROGRAM DZIAŁAŁ NA DANYM KOMPUTERZE
   * Program Python w wersji odpowiedniej dla danego systemu operacyjnego.
-  * Zainstalowane biblioteki:  math, argparse np. przy pomocy menadżera pakietów pip.
+  * Zainstalowane biblioteki:  math, numpy, argparse np. przy pomocy menadżera pakietów pip.
  
 ## SYSTEM OPERACYJNY 
   * 
  
 ## JAK UŻYWAĆ PROGRAMU 
-  * 
+Posługując się git bash należy otorzyć nasz folder (w którym zrobiliśmy skrypt oraz znajdują się dane), po wpisaniu 'python nazwaskryptu.py -h' ukaże się wskazówka, w jaki sposób zamiścić plik z danymi oraz jakie są dostępne transformacje.
+Dane w pliku do wczytania odzielamy przecinkami, odpowiedni w kolejności: dla hirvonena: x,y,z; flh2XYZ: f,l,h; xyz2neu: x,y,z,x0,y0,z0,f,l; h u2000: f,l; u1992: f,l.
+Aby skorzystać z wybranej przez nas transformacji należy wpisać: python nazwaskryptu.py 'wybrana transformacja' 'plik z danymi txt' 'plik wyjściowy (np. txt)'. 
   
 ## KORZYSTANIE Z PROGRAMU 
   * 
