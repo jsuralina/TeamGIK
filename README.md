@@ -27,7 +27,7 @@
   * Zainstalowane biblioteki:  math, numpy, argparse np. przy pomocy menadżera pakietów pip.
  
 ## SYSTEM OPERACYJNY 
-  * 
+Kod Pythona będzie obowiązywał na wielu systemach operacyjnych (m.in. Windows, Linuks, Mac), platformy te obsługują Pythona w różnych wersjach, a więc najważniesze jest aby skontrolować czy dana wymagana biblioteka jest zainstalowana.
  
 ## JAK UŻYWAĆ PROGRAMU 
 Posługując się git bash należy otorzyć nasz folder (w którym zrobiliśmy skrypt oraz znajdują się dane), po wpisaniu 'python nazwaskryptu.py -h' ukaże się wskazówka, w jaki sposób zamieścić plik z danymi oraz jakie są dostępne transformacje. Jeżeli wpiszę się nazwę transformacji, której nie ma lub popełni się błąd w nazwie, ukaże się komunikat aby skorzystać z jednej z transformacji, których nazwy się wyświetlą. 
