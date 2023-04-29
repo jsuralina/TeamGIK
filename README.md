@@ -26,7 +26,7 @@
   
 ## WYMAGANIA, KTÓRE TRZEBA SPEŁNIAĆ, ŻEBY PROGRAM DZIAŁAŁ NA DANYM KOMPUTERZE
   * Program Python w wersji odpowiedniej dla danego systemu operacyjnego.
-  * Zainstalowane biblioteki:  math, argparse np. przy pomocy menadżera pakietów pip.
+  * Zainstalowane biblioteki:  math, numpy, argparse np. przy pomocy menadżera pakietów pip.
  
 ## SYSTEM OPERACYJNY 
   * 
