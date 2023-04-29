@@ -11,12 +11,10 @@
 
 
 ## SPIS TREŚCI 
- * do czego służy program i jaką funkcjonalność oferuje (transformacja XYZ -> BLH, transformacja BLH -> XYZ, jakie elipsidy są obsługiwane, ...)
- * jakie wymagania trzeba spełnić, by program działał na danym komputerze (np. trzeba mieć pythona w wesji takiej-a-takiej, 
-      zainstalowaną bibliotekę taką-a-taką, ...)
+ * do czego służy program i jaką funkcjonalność oferuje
+ * jakie wymagania trzeba spełnić, by program działał na danym komputerze 
  * dla jakiego systemu operacyjnego został napisany program 
- * jak go używać wraz z kilkoma przykładami wywołań obrazującymi jak z niego korzystać (w tym opis struktury danych wejściowych i wyjściowych) 
-      oraz rezultatami tych wywołań (przykładowe wywołania powinny za input brać plik z przykładowymi danymi)
+ * jak go używać wraz z kilkoma przykładami wywołań obrazującymi jak z niego korzystać oraz rezultatami tych wywołań 
  * znane błędy i nietypowe zachowania programu, które nie zostały jeszcze naprawione
 
 
