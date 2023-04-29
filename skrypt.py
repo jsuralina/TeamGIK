@@ -132,11 +132,40 @@ class Transformacje:
         return (x92, y92)
 
 
+
+    #3 XYZ -> neu
+    def xyz2neu(self, xa, ya, za, xb, yb, zb, f, l, h):
+        N = self.Np(f)
+        X0 = (N + h) * np.cos(f) * np.cos(l)
+        Y0 = (N + h) * np.cos(f) * np.sin(l)
+        Z0 = ((1 - self.e2) * N + h) * np.sin(f)
+        
+        dxyz = np.array([xb,yb,zb]) - np.array([xa,ya,za])
+        X, Y, Z = dxyz - np.array([X0, Y0, Z0])
+        
+        sin_f = np.sin(f)
+        cos_f = np.cos(f)
+        sin_l = np.sin(l)
+        cos_l = np.cos(l)
+        
+        R = np.array([[-sin_l, cos_l, 0],
+                      [-sin_f*cos_l, -sin_f*sin_l,  cos_f],
+                      [ cos_f*cos_l,  cos_f*sin_l,  sin_f]])
+        
+        NEU = np.dot(R, np.array([X, Y, Z]))
+        
+        n = NEU[0]
+        e = NEU[1]
+        u = -NEU[2]
+        return(n,e,u)
+
+
+
 if __name__ == '__main__':
     transformationObject = Transformacje()
     parser = argparse.ArgumentParser()
     parser.add_argument("transformation_type", help="type of transformation - choose one"
-                                                    " of the following: hirvonen, flh2XYZ, u2000, u1992")
+                                                    " of the following: hirvonen, flh2XYZ, xyz2neu, u2000, u1992")
     parser.add_argument("input_file", help="path to file with data")
     parser.add_argument("output_file", help="where to save the results")
 
@@ -177,6 +206,24 @@ if __name__ == '__main__':
             for line in results:
                 f.write(f'{line[0]},{line[1]}\n')
 
+
+    elif args.transformation_type == "xyz2neu":
+            
+        with open(args.input_file) as f:
+            data = f.read().splitlines()
+        data = [list(map(float, x.split(','))) for x in data]
+            
+        results = []
+        for line in data:
+            if args.transformation_type == "xyz2neu":
+                results.append(transformationObject.xyz2neu(line[0], line[1], line[2], line[3], line[4], line[5], line[6], line[7], line[8]))
+             
+        with open(args.output_file, 'w') as f:
+            for line in results:
+                f.write(f'{line[0]},{line[1]},{line[2]}\n')  
+
+
+
     else:
         print("Wrong transformation type - run program again"
-              " and choose one of the following: hirvonen, flh2XYZ, u2000, u1992")
+              " and choose one of the following: hirvonen, flh2XYZ, xyz2neu, u2000, u1992")
