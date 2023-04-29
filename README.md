@@ -23,8 +23,9 @@
   * Program ten pozwala przeliczać współrzędne geodezyjne, takie jak szerokość, długość geograficzna wraz z wysokością pomiędzy różnymi układami odniesienia geodezyjnego: WGS84, GRS80, Krasowski.
   
 ## WYMAGANIA, KTÓRE TRZEBA SPEŁNIAĆ, ŻEBY PROGRAM DZIAŁAŁ NA DANYM KOMPUTERZE
-  * Program Python w wersji odpowiedniej dla danego systemu operacyjnego.
-  * Zainstalowane biblioteki:  math, numpy, argparse np. przy pomocy menadżera pakietów pip.
+
+  * Program Python został napisany w wersji 3.9 a więc dla tej wersji będzie działał, biblioteka numpy, która jest wykorzystana jest dostępna od wersji pythona 1.4, a więc dla straszych wersji kod nie będzie działał.
+  * Zainstalowane biblioteki: numpy, argparse np. przy pomocy menadżera pakietów pip.
  
 ## SYSTEM OPERACYJNY 
 Kod Pythona będzie obowiązywał na wielu systemach operacyjnych (m.in. Windows, Linuks, Mac), platformy te obsługują Pythona w różnych wersjach, a więc najważniesze jest aby skontrolować czy dana wymagana biblioteka jest zainstalowana.
@@ -48,17 +49,19 @@ Aby skorzystać z wybranej przez nas transformacji należy wpisać: python nazwa
      - długość geograficzna (B) to kąt między płaszczyzną południka zielonego (czyli płaszczyzną zawierającą oś obrotu Ziemi) a płaszczyzną, która przechodzi przez dany punkt oraz przez południk zerowy;
      - szerokość geograficzna (L) to kąt między płaszczyzną równika a płaszczyzną zawierającą dany punkt;
      - wysokość geoidy (H) to odległość punktu od geoidy (powierzchni odniesienia).
+     
   * Układ współrzędnych XYZ to system, w którym położenie punktu w przestrzeni opisywane jest trzema wartościami: X, Y i Z. 
      - oś X jest określana przez przecięcie południka zerowego z równikiem, 
      - oś Y jest prostopadła do osi X i wskazuje kierunek wschodni, 
      - oś Z jest prostopadła do płaszczyzny utworzonej przez osie X i Y i wskazuje kierunek północny. 
      Dzięki współrzędnym X, Y i Z w układzie XYZ możliwe jest jednoznaczne określenie położenia punktu w przestrzeni.
+     
   * Układ współrzędnych NEU to układ kartezjański. W tym układzie współrzędne są określane jako N, E i U. 
      - oś N wskazuje kierunek północny, 
      - oś E wskazuje kierunek wschodni,  
      - oś U wskazuje kierunek wertykalny - wysokość (odpowiadający kierunkowi pionowemu).
+     
   * Układ współrzędnych 2000 to globalny układ odniesienia wykorzystywany w pomiarach geodezyjnych, oparty na ITRS. Układ ten jest związany z modelem geocentrycznym Ziemi, a jego początkiem jest środek masy Ziemi. Współrzędne w układzie 2000 określają położenie punktu na powierzchni Ziemi w trzech wymiarach: długość geocentryczna, szerokość geocentryczna oraz wysokość geocentryczna, wyrażone w radianach lub stopniach. 
-  
   
   * Układ współrzędnych 1992 
 
