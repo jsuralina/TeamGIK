@@ -21,7 +21,7 @@
 
 
 ## DO CZEGO SŁUŻY PROGRAM?
-  * Program do transformacji współrzędnych między układami służy do konwertowania punktów opisanych w jednym układzie odniesienia na punkty opisane w innym układzie odniesienia.
+  * Program do zamiany współrzędnych między układami oraz transformacji służy do konwertowania punktów opisanych w jednym układzie odniesienia na punkty opisane w innym układzie odniesienia.
   * Program ten pozwala przeliczać współrzędne geodezyjne, takie jak szerokość, długość geograficzna wraz z wysokością pomiędzy różnymi układami odniesienia geodezyjnego, np WGS84, GRS80, czy lokalne układy odniesienia. Może także konwertować współrzędne kartezjańskie XYZ pomiędzy różnymi układami odniesienia kartezjańskiego. 
   
 ## WYMAGANIA, KTÓRE TRZEBA SPEŁNIAĆ, ŻEBY PROGRAM DZIAŁAŁ NA DANYM KOMPUTERZE
