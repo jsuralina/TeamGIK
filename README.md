@@ -29,7 +29,7 @@ Kod Pythona będzie obowiązywał na wielu systemach operacyjnych (m.in. Windows
  
 ## Jak używać programu: 
 Posługując się git bash należy otorzyć folder (w którym zrobiliśmy skrypt oraz znajdują się dane), po wpisaniu 'python nazwaskryptu.py -h' ukaże się wskazówka, w jaki sposób zamieścić plik z danymi oraz jakie są dostępne transformacje. Jeżeli wpiszę się nazwę transformacji, której nie ma lub popełni się błąd w nazwie, ukaże się komunikat aby skorzystać z jednej z transformacji, których nazwy się wyświetlą. 
-Dane w pliku do wczytania odzielamy przecinkami, odpowiedni w kolejności: dla hirvonena: x,y,z; flh2XYZ: f,l,h; xyz2neu: x,y,z,x0,y0,z0,f,l; h u2000: f,l; u1992: f,l.
+Dane w pliku do wczytania odzielamy przecinkami, odpowiedni w kolejności: dla hirvonena: x,y,z; flh2XYZ: f,l,h; xyz2neu: x,y,z,x0,y0,z0,f,l,h; u2000: f,l; u1992: f,l.
 Aby skorzystać z wybranej przez nas transformacji należy wpisać: python nazwaskryptu.py 'wybrana transformacja' 'plik z danymi txt' 'plik wyjściowy (np. txt)'.
   
 ## Przykładowe wywołania programu wraz z wynikami:
@@ -40,7 +40,9 @@ wyniki z powstałego pliku (x,y,z)[m]: [3782459.9998788894,1084999.999984002,500
   - u2000 i u1992: dane wejściowe z pliku txt (f,l)[rad]: [0.90759684600,0.27934967326]; [0.90292450888,0.27184674487]; [0.90984841548,0.27958488448]; [0.90358589949,0.27995262262], 
 wyniki z powstałych plików (x2000,y2000)[m], (x1992,y1992)[m]: 
 u2000 - [5763540.701333446,5569051.247375576];  [5733436.160445737,5539766.844731892]; [5777906.183646557,5569775.301797976]; [5738007.15574452,5571788.684727578], u1992 - [463705.50410325825,294520.884347805]; [435255.92246309575,263629.6249726071]; [478006.9485056922,296034.4053810106]; [438064.4873036621,295851.7827999486].
-  - Wyniki zostały skontrolowane na podstawie funkcji wykorzystywanych na przedmiocie Geodezja Wyższa z semsetru 3.   
+  - Wyniki zostały skontrolowane na podstawie funkcji wykorzystywanych na przedmiocie Geodezja Wyższa z semsetru 3.
+  
+  - xyz2neu: dane wejściowe z pliku txt (x,y,z,x0,y0,z0,f,l,h)[m][rad]: [3782460.000,1085000.000,5003120.000,3813144.749,1062905.755,4984836.387,0.90759684600,0.27934967325,274.154]; [3882460.000,1285000.000,5503120.000,3913144.750,4892905.769,4989162.387,0.90499949444,0.27151967324,254.155]; [4082460.000,1585000.000,5403120.000,3713144.751,4982905.748,4484810.387,0.90559498449,0.21849884415,192.156]; [3716910.000,1048400.000,5003120.000,3813144.736,1452905.765,4984848.387,0.99298191188,0.28151511215,126.154], wyniki z powstałego pliku (n,e,u): [-29698.484581531888,-8940.87415696065,6365140.022492256]; [3467498.597825916,-1080891.8724055937,6153415.4626685595]; [3397171.358170043,-841861.1334792367,6855538.382545167]; [361847.5382611249,-161970.16071317875,6266697.91499167].
 
 ## Błędy i nietypowe zachowania programu, które nie zostały jeszcze naprawione:
 
