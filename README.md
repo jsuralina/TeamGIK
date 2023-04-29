@@ -30,9 +30,9 @@
   * 
  
 ## JAK UŻYWAĆ PROGRAMU 
-Posługując się git bash należy otorzyć nasz folder (w którym zrobiliśmy skrypt oraz znajdują się dane), po wpisaniu 'python nazwaskryptu.py -h' ukaże się wskazówka, w jaki sposób zamiścić plik z danymi oraz jakie są dostępne transformacje.
+Posługując się git bash należy otorzyć nasz folder (w którym zrobiliśmy skrypt oraz znajdują się dane), po wpisaniu 'python nazwaskryptu.py -h' ukaże się wskazówka, w jaki sposób zamiścić plik z danymi oraz jakie są dostępne transformacje. Jeżeli wpiszę się nazwę transformacji, której nie ma lub popełni się błąd w nazwie, ukaże się komunikat aby skorzystać z jednej z transformacji, których nazwy się wyświetlą. 
 Dane w pliku do wczytania odzielamy przecinkami, odpowiedni w kolejności: dla hirvonena: x,y,z; flh2XYZ: f,l,h; xyz2neu: x,y,z,x0,y0,z0,f,l; h u2000: f,l; u1992: f,l.
-Aby skorzystać z wybranej przez nas transformacji należy wpisać: python nazwaskryptu.py 'wybrana transformacja' 'plik z danymi txt' 'plik wyjściowy (np. txt)'. 
+Aby skorzystać z wybranej przez nas transformacji należy wpisać: python nazwaskryptu.py 'wybrana transformacja' 'plik z danymi txt' 'plik wyjściowy (np. txt)'.
   
 ## KORZYSTANIE Z PROGRAMU - PRZYKŁADY
   * 
