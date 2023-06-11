@@ -138,6 +138,7 @@ wyniki z powstałego pliku (n,e,u):
 
 ## Błędy i nietypowe zachowania programu, które nie zostały jeszcze naprawione:
 Zamiana układu geocentrycznego na topocentryczny (xyz2neu) budzi lekkie wątpliwości co do poprawności użycia wzoru, jak i uzyskanych wyników, które jako jedyne nie zostały skontrolowane.  
+Transformacja Krasowski -> 2000 i 1992 daje błędne wyniki, a więc nie powinna być uznana.
    
 
 ## UKŁADY WSPÓŁRZĘDNYCH WYKORZYSTANE W ZADANIU
