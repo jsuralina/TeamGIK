@@ -168,8 +168,11 @@ if __name__ == '__main__':
                                                     " of the following: hirvonen, flh2XYZ, xyz2neu, u2000, u1992")
     parser.add_argument("input_file", help="path to file with data")
     parser.add_argument("output_file", help="where to save the results")
-
+    #dodane
+    parser.add_argument("-m", "--model", help="ellipsoid model - choose one of the following: wgs84, grs80, krasowski", default="wgs84")
     args = parser.parse_args()
+    #dodane
+    transformationObject = Transformacje(model=args.model)
 
     if args.transformation_type == "hirvonen" or args.transformation_type == "flh2XYZ":
 
