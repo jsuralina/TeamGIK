@@ -38,7 +38,7 @@ Na elipsoidzie wgs84:
 3738500.415,1672151.169,4873749.983  
 3731878.893,1675771.950,4877631.999  
 3726355.841,1678787.064,4880860.434    
-komenda: ' python skrypt.py hirvonen dane_xyz.txt wyniki_hirvonen.txt '  
+komenda: ' python skrypt.py hirvonen dane_xyz.txt wyniki_hirvonen.txt -m wgs84'  
 wyniki z powstałego pliku (f,l,h)[rad][m]:  
 0.8743248033899605,0.4191229564769907,360.00001946184784  
 0.8752656281942796,0.42058849040821594,420.0001845471561  
@@ -50,7 +50,7 @@ wyniki z powstałego pliku (f,l,h)[rad][m]:
 0.90292450888,0.27184674487,277.635  
 0.90759462173,0.27934939683,175.337  
 0.90569821555,0.27595518859,176.862  
-komenda: ' python skrypt.py flh2XYZ dane_flh.txt wyniki_flh.txt '  
+komenda: ' python skrypt.py flh2XYZ dane_flh.txt wyniki_flh.txt -m wgs84'  
 wyniki z powstałego pliku (x,y,z)[m]:  
 3782459.9998788894,1084999.999984002,5003120.000011584  
 3813066.1506870356,1062882.0896164104,4984729.575443349  
@@ -62,8 +62,8 @@ wyniki z powstałego pliku (x,y,z)[m]:
 0.90292450888,0.27184674487  
 0.90984841548,0.27958488448  
 0.90358589949,0.27995262262    
-komenda: ' python skrypt.py u2000 dane_u2000_u1992.txt  wyniki_2000.txt '  
-         ' python skrypt.py u1992 dane_u2000_u1992.txt  wyniki_1992.txt '  
+komenda: ' python skrypt.py u2000 dane_u2000_u1992.txt  wyniki_2000.txt -m wgs84'  
+         ' python skrypt.py u1992 dane_u2000_u1992.txt  wyniki_1992.txt -m wgs84'  
 wyniki z powstałych plików (x2000,y2000)[m], (x1992,y1992)[m]:  
 u2000:  
 5763540.701333446,5569051.247375576  
@@ -79,7 +79,7 @@ u1992:
 Na elipsoidze grs80:
 Wszystkie dane wejściowe są takie same jak na elipsoidzie wgs84
   - hirvonen:  
-komenda: 'python skrypt.py hirvonen dane_xyz.txt grs80_hirvonen.txt'  
+komenda: 'python skrypt.py hirvonen dane_xyz.txt grs80_hirvonen.txt -m grs80'  
 wyniki z powstałego pliku (f,l,h)[rad][m]:  
 0.874324803406157,0.4191229564769907,360.0000810595229  
 0.8752656282104705,0.42058849040821594,420.00024624262005  
@@ -87,7 +87,7 @@ wyniki z powstałego pliku (f,l,h)[rad][m]:
 0.8769876835315953,0.42328387194116407,529.9997661709785  
 
   - flh2XYZ:  
-komenda: 'python skrypt.py flh2XYZ dane_flh.txt grs80_flh2XYZ.txt'  
+komenda: 'python skrypt.py flh2XYZ dane_flh.txt grs80_flh2XYZ.txt -m grs80'  
 wyniki z powstałego pliku (x,y,z)[m]:  
 3782459.999917521,1084999.9999950835,5003119.9998976905  
 3813066.1507256944,1062882.0896271865,4984729.5753295  
@@ -95,7 +95,7 @@ wyniki z powstałego pliku (x,y,z)[m]:
 3795234.382539241,1074734.9385850322,4995582.386449187  
 
   - u2000 i u1992:  
-komenda: 'python skrypt.py u2000 dane_u2000_u1992.txt  grs80_2000.txt'  
+komenda: 'python skrypt.py u2000 dane_u2000_u1992.txt  grs80_2000.txt -m grs80'  
 python 'skrypt.py u1992 dane_u2000_u1992.txt  grs80_1992.txt'  
 wyniki z powstałych plików (x2000,y2000)[m], (x1992,y1992)[m]:  
 u2000:  
@@ -111,7 +111,7 @@ u1992:
 
 Na elipsoidze Krasowskiego:
  - hirvonen:  
-komenda: 'python skrypt.py hirvonen dane_xyz.txt kr_hirvonen.txt'  
+komenda: 'python skrypt.py hirvonen dane_xyz.txt kr_hirvonen.txt -m krasowski'  
 wyniki z powstałego pliku (f,l,h)[rad][m]:  
 0.8743243854405441,0.4191229564769907,250.41072719730437  
 0.8752652103920222,0.42058849040821594,310.40838652383536  
@@ -119,7 +119,7 @@ wyniki z powstałego pliku (f,l,h)[rad][m]:
 0.8769872659863452,0.42328387194116407,420.4033220047131  
 
   - flh2XYZ:  
-komenda: 'python skrypt.py flh2XYZ dane_flh.txt kr_flh2XYZ.txt'  
+komenda: 'python skrypt.py flh2XYZ dane_flh.txt kr_flh2XYZ.txt -m krasowski'  
 wyniki z powstałego pliku (x,y,z)[m]:  
 3782522.914652955,1085018.047109381,5003208.0457295915  
 3813129.5828701165,1062899.7711694278,4984817.308407567  
